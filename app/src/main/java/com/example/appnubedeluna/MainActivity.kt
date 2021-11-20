@@ -59,7 +59,25 @@ class MainActivity : AppCompatActivity() {
             Toast.LENGTH_SHORT
         ).show();
     }
-    fun onRegister(view: View) {}
+    fun onRegister(view: View) {
+        var username = edtUsername!!.text.toString();
+        var password = edtPassword!!.text.toString();
+
+        if (username.isNotEmpty() && password.isNotEmpty()) {
+
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(username, password)
+                .addOnCompleteListener {
+                    if (it.isSuccessful) {
+                        showHome(username)
+                    } else {
+                        getToast("error al autenticar");
+                    }
+                }
+
+        } else {
+            getToast("error al loguear");
+        }
+    }
 
 
 }
