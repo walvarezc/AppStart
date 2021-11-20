@@ -6,12 +6,24 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/primary_text_dark"
+        android:elevation="4dp"
+        android:background="#009688"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:gravity="center"
+        android:background="@drawable/customborder"
         android:orientation="horizontal">
 
         <ImageView
@@ -28,11 +40,15 @@
         android:layout_height="match_parent"
         android:layout_margin="16dp"
         android:gravity="left"
+        android:background="@drawable/customborder"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:text="@string/text_username"
             android:textSize="25sp" />
 
@@ -40,7 +56,7 @@
             android:id="@+id/edtUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="example@domain.com"
+            android:hint="@string/hint_username"
             tools:ignore="TouchTargetSizeCheck">
 
         </EditText>
@@ -49,6 +65,9 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:textStyle="bold"
             android:text="@string/text_password"
             android:textSize="25sp" />
 
@@ -61,17 +80,19 @@
 
         <Button
             android:id="@+id/btn_Login"
-            android:layout_width="150dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onlogin"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:text="@string/text" />
-        <Button
-            android:id="@+id/btnRegister"
-            android:onClick="onRegister"
-            android:layout_width="150dp"
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="register"
+            android:text="@string/textview"
+            android:textColor="@color/teal_700"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <ImageButton
@@ -80,7 +101,8 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/luna" />
+            app:srcCompat="@drawable/luna"
+            tools:ignore="SpeakableTextPresentCheck" />
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"

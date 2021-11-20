@@ -2,6 +2,7 @@
     <string name="app_name">App Nube de Luna</string>
 
     <string name="text_username">Usuario</string>
+    <string name="hint_username">Su correo</string>
     <string name="text_password">Contraseña</string>
     <string name="hint_password">Tu contraseña</string>
     <string name="text">Inicio</string>
@@ -15,5 +16,9 @@
     <string name="txt_lorem_ipsum_4">Item 1_.Sábanas cama sencilla 100cmX190cm.</string>
     <string name="txt_lorem_ipsum_2">Item 2_.Sábanas cama doble 140cmX190cm.</string>
     <string name="txt_lorem_ipsum_3">Item 3_.Sabanas cama extradoble 170cmX200cm.</string>
+    <string name="txt_action_search">Buscar</string>
+    <string name="txt_action_settings">Menu</string>
+    <string name="txt_action_logout">Salir</string>
+    <string name="textview">Register</string>
 
 </resources>
