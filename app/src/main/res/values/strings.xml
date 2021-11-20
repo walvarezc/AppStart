@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">App Nube de Luna</string>
+
+    <string name="text_username">Username</string>
+    <string name="text_password">Password</string>
+    <string name="hint_password">Your password</string>
+    <string name="text">Login</string>
+    <string name="txt_welcome">Welcome</string>
+    <string name="user">María Teresa</string>
+    <string name="txt_introduction">Introduction</string>
+    <string name="txt_class1">Category</string>
+    <string name="txt_lorem_ipsum">There is nothing better than feeling good in the place where you rest and especially there is nothing better than seeing it look the way you like it.
+         Nube de Luna is the app that shows you different types of bedding that can make your resting place and dream paradise.</string>
+    <string name="txt_lorem_ipsum_4">Bed sheets twin size 100cmX190cm.</string>
+    <string name="txt_lorem_ipsum_2">Bed sheets full size 140cmX190cm.</string>
+    <string name="txt_lorem_ipsum_3">Bed sheets queen size 170cmX200cm.</string>
+
+
+    <string name="submit" />
+
+
+</resources>
