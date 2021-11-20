@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "387625576327",
+    "project_id": "nube-de-luna",
+    "storage_bucket": "nube-de-luna.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:387625576327:android:ad2a3d6d51153885e0d522",
+        "android_client_info": {
+          "package_name": "com.example.appnubedeluna"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "387625576327-r4gd40o0ju8l7h2i9gceq8a0ml8e1hlc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appnubedeluna",
+            "certificate_hash": "d929e1fd49695978df2631f079a908a69a1abe2a"
+          }
+        },
+        {
+          "client_id": "387625576327-olr1l8f9uuck4bp8thduran9an9anch2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvHGmgYubZ7kpioG33gK2eOUvvVqB_b20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "387625576327-olr1l8f9uuck4bp8thduran9an9anch2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
