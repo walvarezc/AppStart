@@ -1,9 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Register">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/customborder"
+            android:src="@drawable/luna" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/text_username"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editUserNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_username">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/text_password"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editPasswordLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_password"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/txt_name"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapSentences"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz " />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/txt_lastname"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editLastNameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_lastname">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapSentences"
+                    android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_chettan"
+                android:text="@string/txt_Cellnumber"
+                android:textColor="@color/teal_700"
+                android:textSize="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/editMobileLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_Cellnumber">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:digits="1234567890"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Switch
+                android:id="@+id/stTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:onClick="onTerms"
+                android:text="@string/txt_Swicht"
+                android:textColor="@color/teal_700" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/green_500"
+                    android:onClick="onRegister"
+                    android:elevation="4dp"
+                    android:text="@string/txt_Register"
+                    android:textStyle="bold"
+                    android:outlineAmbientShadowColor="@color/teal_700"/>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:onClick="onReturnLogin"
+                    android:text="@string/txt_Return"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

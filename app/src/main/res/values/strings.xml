@@ -19,7 +19,16 @@
     <string name="txt_action_settings">Settings</string>
     <string name="txt_action_logout">Logout</string>
     <string name="textview">Register</string>
-
+    <string name="txt_fab">Element Added</string>
+    <string name="txt_name">Name</string>
+    <string name="txt_lastname">Lastname</string>
+    <string name="txt_Cellnumber">Cellphone</string>
+    <string name="hint_name">Your Name</string>
+    <string name="hint_lastname">Your Lastname</string>
+    <string name="hint_Cellnumber">Your Cellphone Number</string>
+    <string name="txt_Register">Register</string>
+    <string name="txt_Swicht">On</string>
+    <string name="txt_Return">Return</string>
 
 
 

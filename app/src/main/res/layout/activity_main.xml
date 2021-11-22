@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
@@ -91,6 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/textview"
+            android:onClick="onRegister"
             android:textColor="@color/teal_700"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -103,17 +111,22 @@
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/luna"
             tools:ignore="SpeakableTextPresentCheck" />
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            android:src="@drawable/ic_my_icon"
-            android:contentDescription="@string/submit"
-            android:layout_margin="16dp" />
-
 
     </LinearLayout>
-
-
 </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/submit"
+        android:src="@android:drawable/ic_input_add"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

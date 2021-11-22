@@ -20,5 +20,17 @@
     <string name="txt_action_settings">Menu</string>
     <string name="txt_action_logout">Salir</string>
     <string name="textview">Register</string>
+    <string name="txt_fab">Elemento Adicionado</string>
+    <string name="txt_name">Nombre</string>
+    <string name="txt_lastname">Apellido</string>
+    <string name="txt_Cellnumber">Celular</string>
+    <string name="hint_name">Su Nombre</string>
+    <string name="hint_lastname">Su(s) Apellido(s)</string>
+    <string name="hint_Cellnumber">Su Número Celular</string>
+    <string name="txt_Register">Registrar</string>
+    <string name="txt_Swicht">Encendido</string>
+    <string name="txt_Return">Return</string>
+
+
 
 </resources>

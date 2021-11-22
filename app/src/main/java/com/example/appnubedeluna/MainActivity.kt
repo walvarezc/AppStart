@@ -3,6 +3,7 @@ package com.example.appnubedeluna
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
@@ -45,11 +46,11 @@ class MainActivity : AppCompatActivity() {
     }
     private fun showHome(username: String) {
 
-        val homeIntent = Intent(this, WelcomeActivity::class.java).apply {
+        val intento = Intent(this, WelcomeActivity::class.java).apply {
             putExtra("email", username)
         }
 
-        startActivity(homeIntent)
+        startActivity(intento)
 
         getToast("wellcome");
     }
@@ -84,5 +85,24 @@ class MainActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main_activity, menu)
         return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
+        R.id.action_search -> {
+            Toast.makeText(this,R.string.txt_action_search, Toast.LENGTH_LONG).show()
+            true
+        }
+        R.id.action_settings -> {
+            Toast.makeText(this,R.string.txt_action_settings, Toast.LENGTH_LONG).show()
+            true
+        }
+        R.id.action_logout -> {
+            Toast.makeText(this,R.string.txt_action_logout, Toast.LENGTH_LONG).show()
+            true
+        }
+        else -> {
+            super.onOptionsItemSelected(item)
+        }
+
     }
     }
