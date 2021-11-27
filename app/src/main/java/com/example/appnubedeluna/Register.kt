@@ -41,9 +41,12 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
+    fun onReturnLogin(view: android.view.View) {}
+    fun onRegister(view: android.view.View) {}
+    fun onTerms(view: android.view.View) {}
 
 
-    }
+}
 
     fun onTerms(view: android.view.View) {}
     fun onRegister(view: android.view.View) {}

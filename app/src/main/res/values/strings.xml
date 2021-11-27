@@ -7,7 +7,7 @@
     <string name="hint_password">Your password</string>
     <string name="text">Login</string>
     <string name="txt_welcome">Welcome</string>
-    <string name="user">María Teresa</string>
+    <string name="user">to the store  </string>
     <string name="txt_introduction">Introduction</string>
     <string name="txt_class1">Category</string>
     <string name="txt_lorem_ipsum">There is nothing better than feeling good in the place where you rest and especially there is nothing better than seeing it look the way you like it.
@@ -32,20 +32,19 @@
     <string name="test_Seller">Seller</string>
     <string name="test_search">Search</string>
     <string name="test_Category">Category</string>
-    <string name="txt_Tarea_1">Extra big</string>
-    <string name="txt_Tarea_2">double bed</string>
-    <string name="txt_Tarea_3">Single bed</string>
-    <string name="txt_Tarea">Task</string>
+    <string name="txt_Task_1">Extra big</string>
+    <string name="txt_Task_2">double bed</string>
+    <string name="txt_Task_3">Single bed</string>
+    <string name="txt_Task">Task</string>
     <string name="txt_Hora">Hour</string>
     <string name="txt_Lugar">Place</string>
     <string name="submit">Send </string>
     <string name="txt_ExGra">Confortable en ambientes  familiares y de espacios de descanso </string>
-    <string name="txt_tienda">Welcome to online store </string>
-    <String name="test_Register">Register</String>
+    <string name="txt_Welcome">Welcome to online store </string>
+    <string name="txt_Store">Store</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
 
-
-    <string name="submit" />
 
 
 </resources>

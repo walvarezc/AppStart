@@ -7,7 +7,7 @@
     <string name="hint_password">Tu contraseña</string>
     <string name="text">Inicio</string>
     <string name="txt_welcome">Bienvenido</string>
-    <string name="user">Angélica</string>
+    <string name="user">A la tienda </string>
     <string name="txt_introduction">Introducción</string>
     <string name="txt_class1">Categoría</string>
     <string name="txt_lorem_ipsum">No hay nada mejor que sentirse bien en el lugar en donde descansas y en especial no hay nada mejor que verlo lucir como a tí te gusta.
@@ -29,7 +29,19 @@
     <string name="hint_Cellnumber">Su Número Celular</string>
     <string name="txt_Register">Registrar</string>
     <string name="txt_Swicht">Encendido</string>
-    <string name="txt_Return">Return</string>
+    <string name="txt_Return">Regreso</string>
+    <string name="test_search">Buscar</string>
+    <string name="test_Category">Categoria</string>
+    <string name="txt_Task_1">Extra grande</string>
+    <string name="txt_Task_2">cama doble </string>
+    <string name="txt_Task_3">camade soltero</string>
+    <string name="txt_Task">Tarea</string>
+    <string name="txt_Hora">Hora</string>
+    <string name="txt_Lugar">lugar</string>
+    <string name="txt_ExGra">Confortable en ambientes  familiares y de espacios de descanso </string>
+    <string name="txt_Welcome">Bienvenido a su tienda en linea </string>
+    <string name="test_Seller">vendedor</string>
+    <string name="txt_Store">Tienda</string>
 
 
 

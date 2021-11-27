@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
-
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -18,140 +17,170 @@
             android:id="@+id/my_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:titleTextColor="@android:color/primary_text_dark"
-            android:background="#009688"
             android:elevation="4dp"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@android:color/primary_text_dark" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/customborder"
+            android:gravity="center"
+            android:orientation="horizontal"
+            tools:contex=".ToDoFragment">
+
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="3"
-                android:orientation="vertical"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/customborder"
                 android:gravity="center_vertical"
-                android:layout_marginStart="20dp">
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
                 <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/txt_Task_1"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    android:onClick="onbtn1"
+                    android:text=">" />
+
+                <androidx.constraintlayout.motion.widget.MotionLayout
+                    android:id="@+id/constraintLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="25sp"
-                    android:text="@string/txt_welcome"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="35sp"
-                    android:text="@string/user"/>
+                    android:layout_weight="1"
+                    app:layoutDescription="@xml/activity_welcome_xml_constraintlayout_scene">
 
-
-
+                </androidx.constraintlayout.motion.widget.MotionLayout>
             </LinearLayout>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/luna"
-                android:layout_marginEnd="20dp"
-                android:layout_weight="2">
 
-            </ImageView>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/txt_Task_2"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    android:onClick="onbtn2"
+                    android:text=">" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/customborder"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="72dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/txt_Task_3"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_width="65dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:elevation="10dp"
+                    android:onClick="onbtn3"
+                    android:text=">" />
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/fragment_container_view"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_margin="20dp"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_introduction"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue_500">
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/customborder"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_lorem_ipsum"
-                    android:textSize="14dp">
-
-                </TextView>
-
-            </LinearLayout>
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_margin="16dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/paisaje">
-
-            </ImageView>
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_margin="20dp"
-            android:layout_weight="1">
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_class1"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/blue_500">
-
-                </TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_lorem_ipsum_4"
-                    android:textSize="15dp"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_lorem_ipsum_2"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/txt_lorem_ipsum_3"
-                    android:textSize="15dp">
-
-                </TextView>
-
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#009688"
+                android:text="@string/txt_Welcome"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/white"
+                android:textSize="27sp"
+                app:cornerRadius="50dp" />
 
             <ImageView
-                android:layout_width="0dp"
+                android:id="@+id/image_tienda"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:layout_weight="1"
-                android:foreground="@drawable/flores"
-                android:src="@mipmap/ic_launcher_round">
+                android:layout_gravity="center"
+                android:src="@drawable/luna" />
 
-            </ImageView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainerView"
+                android:name="com.example.appnubedeluna.DetailFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
+
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -161,8 +190,9 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
         android:src="@android:drawable/ic_input_add"
-        app:tint="@color/white">
-
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck">
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
