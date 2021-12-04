@@ -50,7 +50,9 @@
                 android:layout_height="50dp"
                 android:layout_gravity="bottom|end"
                 android:paddingHorizontal="10dp"
-                android:src="@drawable/ic_baseline_add_shopping_cart_24"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+                android:src="@drawable/ic_baseline_add_shopping_cart_24">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
         </LinearLayout>
 
@@ -134,7 +136,9 @@
                 android:layout_height="50dp"
                 android:layout_gravity="bottom|end"
                 android:paddingHorizontal="10dp"
-                android:src="@drawable/ic_baseline_add_shopping_cart_24"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+                android:src="@drawable/ic_baseline_add_shopping_cart_24">
+
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
 
         </LinearLayout>
     </LinearLayout>

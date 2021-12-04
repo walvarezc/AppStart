@@ -39,9 +39,20 @@
     <string name="txt_Hora">Hour</string>
     <string name="txt_Lugar">Place</string>
     <string name="submit">Send </string>
-    <string name="txt_ExGra">Confortable en ambientes  familiares y de espacios de descanso </string>
+    <string name="txt_ExGra">Bed sheets queen size, Extra soft brushed microfiber, Dimensions: width: 1.60m-length: 2.00m, Specification: 80% polyester-20% cotton,Reference: flamingos, Color blue</string>
     <string name="txt_Welcome">Welcome to online store </string>
     <string name="txt_Store">Store</string>
+    <string name="txt_full"> Bed sheets full size
+        Extra soft brushed microfiber
+        Dimensions: width: 1.40m-length: 1.90m
+        Specification: 80% polyester-20% cotton
+        Reference: harmony
+        Beige</string>
+    <string name="txt_Single">Extra soft brushed microfiber
+        Dimensions: width: 1.00m-length: 1.90m
+        Specification: 80% polyester-20% cotton
+        Reference: spring
+        Color: amber</string>
 
     <!-- TODO: Remove or change this placeholder text -->
 

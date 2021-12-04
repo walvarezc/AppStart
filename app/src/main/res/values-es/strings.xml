@@ -38,7 +38,25 @@
     <string name="txt_Task">Tarea</string>
     <string name="txt_Hora">Hora</string>
     <string name="txt_Lugar">lugar</string>
-    <string name="txt_ExGra">Confortable en ambientes  familiares y de espacios de descanso </string>
+    <string name="txt_ExGra">Juego de Sábanas Cama Extra doble
+        Extra suaves de microfibra cepillada
+        Dimensiones: ancho: 1.60m-largo:2.00m
+        Especificación: 80% polister-20% algodón
+        Referencia: flamencos
+        Color: azul</string>
+    <string name="txt_full">Juego de Sábanas Cama doble
+        Extra suaves de microfibra cepillada
+        Dimensiones: ancho:1.40m-largo:1.90m
+        Especificación: 80% poliester-20% algodón
+        Referencia: armonía
+        Color: beige</string>
+    <string name="txt_Single">Juego de sábanas Cama Sencilla
+        Extra suaves de microfibra cepillada
+        Dimensiones: ancho: 1.00m-largo: 1.90m
+        Especificación: 80% poliester-20% algodón
+        Referencia: primavera
+        Color: ámbar</string>
+
     <string name="txt_Welcome">Bienvenido a su tienda en linea </string>
     <string name="test_Seller">vendedor</string>
     <string name="txt_Store">Tienda</string>

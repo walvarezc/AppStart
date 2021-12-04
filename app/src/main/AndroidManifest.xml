@@ -11,11 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppNubeDeLuna">
+
         <activity
-            android:name=".to_do"
-            android:exported="false" />
-        <activity
-            android:name=".Register"
+            android:name=".ProductoActivity"
             android:exported="false" />
         <activity
             android:name=".WelcomeActivity"
