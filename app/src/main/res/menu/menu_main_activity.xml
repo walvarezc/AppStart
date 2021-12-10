@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-      xmlns:app="http://schemas.android.com/apk/res-auto">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.home.activities.TransactionSearchActivity">
     <item
         android:id="@+id/action_search"
         android:icon="@android:drawable/ic_menu_search"
         android:title="@string/txt_action_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         app:showAsAction="always">
 
     </item>
@@ -18,8 +22,7 @@
     <item
         android:id="@+id/action_logout"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
-        android:title="@string/txt_action_logout"
-        app:showAsAction="always">
+        android:title="@string/txt_action_logout">
 
     </item>
 
